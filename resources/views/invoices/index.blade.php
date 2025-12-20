@@ -31,7 +31,7 @@
                                 <tr>
                                     <td>{{ $invoice->id }}</td>
                                     <td>{{ $invoice->patient->name }}</td>
-                                    <td>{{ number_format($invoice->amount, 2) }} ر.س</td>
+                                    <td>{{ number_format($invoice->amount, 2) }} ج.س</td>
                                     <td>
                                         @if($invoice->payment_status == 'مدفوع')
                                             <span class="badge bg-success">{{ $invoice->payment_status }}</span>

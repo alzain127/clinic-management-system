@@ -51,7 +51,7 @@
 
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="amount" class="form-label">المبلغ (ر.س) *</label>
+                        <label for="amount" class="form-label">المبلغ (ج.س) *</label>
                         <input type="number" step="0.01" class="form-control @error('amount') is-invalid @enderror"
                             id="amount" name="amount" value="{{ old('amount', $invoice->amount ?? '') }}" required min="0">
                         @error('amount')

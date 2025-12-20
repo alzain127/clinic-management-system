@@ -106,7 +106,7 @@
                                     @foreach($patient->invoices as $invoice)
                                         <tr>
                                             <td>#{{ $invoice->id }}</td>
-                                            <td>{{ number_format($invoice->amount, 2) }} ر.س</td>
+                                            <td>{{ number_format($invoice->amount, 2) }} ج.س</td>
                                             <td><span
                                                     class="badge bg-{{ $invoice->payment_status == 'مدفوع' ? 'success' : 'danger' }}">{{ $invoice->payment_status }}</span>
                                             </td>

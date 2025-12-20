@@ -34,7 +34,7 @@
         <div class="col-md-3">
             <div class="stat-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
                 <div>💰 الإيرادات الشهرية</div>
-                <h3>{{ number_format($monthlyRevenue ?? 0, 2) }} ر.س</h3>
+                <h3>{{ number_format($monthlyRevenue ?? 0, 2) }} ج.س</h3>
                 <a href="{{ route('reports.index') }}" class="text-white text-decoration-none">عرض التقارير ←</a>
             </div>
         </div>

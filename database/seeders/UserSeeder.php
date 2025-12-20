@@ -13,7 +13,7 @@ class UserSeeder extends Seeder
         // Create Admin User
         User::create([
             'name' => 'المدير العام',
-            'email' => 'admin@clinic.com',
+            'email' => 'admin@admin.com',
             'password' => Hash::make('password'),
             'role' => 'مدير',
         ]);
@@ -21,7 +21,7 @@ class UserSeeder extends Seeder
         // Create Staff User
         User::create([
             'name' => 'موظف الاستقبال',
-            'email' => 'staff@clinic.com',
+            'email' => 'user@admin.com',
             'password' => Hash::make('password'),
             'role' => 'موظف',
         ]);

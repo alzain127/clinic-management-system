@@ -27,7 +27,7 @@
                     <hr>
 
                     <p><strong>المبلغ:</strong> <span class="h4 text-success">{{ number_format($invoice->amount, 2) }}
-                            ر.س</span></p>
+                            ج.س</span></p>
 
                     <p><strong>حالة الدفع:</strong>
                         @if($invoice->payment_status == 'مدفوع')
@@ -75,7 +75,7 @@
                                         <tr>
                                             <td>{{ $item['name'] ?? '-' }}</td>
                                             <td>{{ $item['quantity'] ?? '-' }}</td>
-                                            <td>{{ number_format($item['price'] ?? 0, 2) }} ر.س</td>
+                                            <td>{{ number_format($item['price'] ?? 0, 2) }} ج.س</td>
                                         </tr>
                                     @endforeach
                                 </tbody>
@@ -92,7 +92,7 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between mb-2">
                         <span>المبلغ الإجمالي:</span>
-                        <strong>{{ number_format($invoice->amount, 2) }} ر.س</strong>
+                        <strong>{{ number_format($invoice->amount, 2) }} ج.س</strong>
                     </div>
 
                     <div class="d-flex justify-content-between mb-2">

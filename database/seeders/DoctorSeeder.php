@@ -12,7 +12,7 @@ class DoctorSeeder extends Seeder
         $doctors = [
             [
                 'name' => 'د. محمد الأحمد',
-                'phone' => '0561234567',
+                'phone' => '0961234567',
                 'specialization' => 'طب عام',
                 'duty_schedule' => [
                     'الأحد' => '09:00-17:00',
@@ -23,8 +23,8 @@ class DoctorSeeder extends Seeder
                 ],
             ],
             [
-                'name' => 'د. سارة العتيبي',
-                'phone' => '0569876543',
+                'name' => 'د. سارة الجعلي',
+                'phone' => '0969876543',
                 'specialization' => 'طب الأطفال',
                 'duty_schedule' => [
                     'الأحد' => '10:00-16:00',
@@ -34,8 +34,8 @@ class DoctorSeeder extends Seeder
                 ],
             ],
             [
-                'name' => 'د. عبدالله القحطاني',
-                'phone' => '0551112244',
+                'name' => 'د. عبدالله محمد',
+                'phone' => '0951112244',
                 'specialization' => 'طب الأسنان',
                 'duty_schedule' => [
                     'الأحد' => '15:00-21:00',

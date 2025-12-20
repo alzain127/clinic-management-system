@@ -65,7 +65,7 @@
                     </div>
                     <div class="card-body">
                         <p><strong>رقم الفاتورة:</strong> #{{ $appointment->invoice->id }}</p>
-                        <p><strong>المبلغ:</strong> {{ number_format($appointment->invoice->amount, 2) }} ر.س</p>
+                        <p><strong>المبلغ:</strong> {{ number_format($appointment->invoice->amount, 2) }} ج.س</p>
                         <p><strong>حالة الدفع:</strong>
                             @if($appointment->invoice->payment_status == 'مدفوع')
                                 <span class="badge bg-success">{{ $appointment->invoice->payment_status }}</span>

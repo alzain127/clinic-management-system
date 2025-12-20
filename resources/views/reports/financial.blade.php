@@ -29,7 +29,7 @@
         <div class="col-md-6 mb-4">
             <div class="stat-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
                 <div>💰 إجمالي الإيرادات</div>
-                <h3>{{ number_format($totalRevenue ?? 0, 2) }} ر.س</h3>
+                <h3>{{ number_format($totalRevenue ?? 0, 2) }} ج.س</h3>
                 <small>المبالغ المدفوعة فعلياً</small>
             </div>
         </div>
@@ -37,7 +37,7 @@
         <div class="col-md-6 mb-4">
             <div class="stat-card" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
                 <div>⏳ المدفوعات المعلقة</div>
-                <h3>{{ number_format($pendingPayments ?? 0, 2) }} ر.س</h3>
+                <h3>{{ number_format($pendingPayments ?? 0, 2) }} ج.س</h3>
                 <small>الفواتير غير المدفوعة</small>
             </div>
         </div>
@@ -67,7 +67,7 @@
                                     <td>{{ $invoice->id }}</td>
                                     <td>{{ $invoice->created_at->format('Y-m-d') }}</td>
                                     <td>{{ $invoice->patient->name }}</td>
-                                    <td>{{ number_format($invoice->amount, 2) }} ر.س</td>
+                                    <td>{{ number_format($invoice->amount, 2) }} ج.س</td>
                                     <td>
                                         @if($invoice->payment_status == 'مدفوع')
                                             <span class="badge bg-success">{{ $invoice->payment_status }}</span>
